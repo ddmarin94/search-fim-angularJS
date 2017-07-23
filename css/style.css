@@ -1,0 +1,63 @@
+.imgSize{
+  max-height: 525px;
+}
+
+nav.navigation{
+background-color: #000;
+}
+
+.navigation .container ul li a{
+  color: #fff;
+}
+
+.navigation .container div a{
+  color: #fff;
+  font-weight: bold;
+}
+
+.searchBar{
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.logo{
+  margin: 0px;
+}
+
+.main-title{
+  text-align: center;
+}
+
+img{
+  max-width: 250px;
+  max-height: 360px;
+  min-width: 200px;
+  max-width: 310px;
+}
+
+h3{
+  font-size: 20px;
+  height: 40px;
+  text-align: center;
+}
+
+.film-modal{
+  margin-top: 150px;
+}
+
+.modal-list{
+  list-style: none;
+}
+
+.modal-list:first-of-type{
+  text-align: justify;
+}
+
+.progress{
+  padding:0px;
+  margin-left: 15px;
+}

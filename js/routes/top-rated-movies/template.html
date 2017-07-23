@@ -1,0 +1,56 @@
+<h1 class="main-title">{{ titlePage }}</h1>
+<div class="container searchBar">
+  <div class="row">
+    <div class="input-group col-md-8 col-md-offset-2">
+      <input type="text" class="form-control" placeholder="Search for..." ng-model="searchTitle">
+    </div>
+    <!-- /input-group -->
+  </div>
+  <!-- /.col-lg-8 -->
+</div>
+<!-- /.container -->
+<div class="row" >
+<div ng-repeat="ratedFilm in ratedFilms | filter: searchTitle">
+  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-10 ">
+    <div class="thumbnail">
+      <img ng-src="https://image.tmdb.org/t/p/w500{{ ratedFilm.poster_path }}" alt="film-image"></img>
+      <div class="caption">
+        <!-- Title of the movie -->
+        <h3>{{ ratedFilm.title }}</h3>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#{{ ratedFilm.id }}">
+          More
+        </button>
+        <!-- Modal -->
+        <div  class="modal fade film-modal" id="{{ ratedFilm.id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">{{ ratedFilm.title }}</h4>
+              </div>
+              <div class="modal-body row">
+                <img class="col-md-6" ng-src="https://image.tmdb.org/t/p/w500{{ ratedFilm.poster_path }}" alt="film-image"></img>
+                <ul class="col-md-6 modal-list">
+                  <li><strong>Synopsis :</strong> {{ratedFilm.overview}}</li>
+                  <li><strong>Launch date :</strong>  {{ratedFilm.release_date}}.</li>
+                  <li><strong>Score :</strong>  {{ratedFilm.vote_average}} of {{ratedFilm.vote_count}} votes.</li>
+                </ul>
+                <div class="progress col-md-5">
+                  <div class="progress-bar " role="progressbar" aria-valuenow="{{ratedFilm.vote_average * 10}}" aria-valuemin="0" aria-valuemax="100" style="width: {{ratedFilm.vote_average * 10}}%;">
+                    {{ratedFilm.vote_average}} / 10
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- /Modal -->
+      </div>
+    </div>
+  </div>
+</div>
+</div>
