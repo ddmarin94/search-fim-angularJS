@@ -30,6 +30,8 @@ background-color: #000;
 
 .main-title{
   text-align: center;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
 }
 
 img{
@@ -63,5 +65,18 @@ h3{
 }
 
 .modal-button{
-  
+  height: 30px;
+  font-size: 16px;
+  line-height: 0px;
+  margin-top: 20px;
+}
+
+.custom-input.form-control.ng-pristine.ng-untouched.ng-valid.ng-empty{
+   border-radius: 5px;
+ }
+
+div.film-content{
+  -webkit-box-shadow: 3px 3px 7px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 3px 3px 7px 0px rgba(0,0,0,0.75);
+  box-shadow: 3px 3px 7px 0px rgba(0,0,0,0.75);
 }

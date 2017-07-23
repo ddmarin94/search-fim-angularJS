@@ -2,7 +2,7 @@
 <div class="container searchBar">
   <div class="row">
     <div class="input-group col-md-8 col-md-offset-2">
-      <input type="text" class="form-control" placeholder="Search for..." ng-model="searchTitle">
+      <input type="text" class="custom-input form-control" placeholder="Search for..." ng-model="searchTitle">
     </div>
     <!-- /input-group -->
   </div>
@@ -12,13 +12,13 @@
 <div class="row" >
   <div ng-repeat="playingFilm in playingFilms | filter: searchTitle">
     <div class="col-lg-3 col-md-4 col-sm-6 col-xs-10 ">
-      <div class="thumbnail">
+      <div class="thumbnail film-content">
         <img ng-src="https://image.tmdb.org/t/p/w500{{ playingFilm.poster_path }}" alt="film-image"></img>
         <div class="caption">
           <!-- Title of the movie -->
           <h3>{{ playingFilm.title }}</h3>
           <!-- Button trigger modal -->
-          <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#{{ playingFilm.id }}">
+          <button type="button" class="btn btn-primary btn-lg form-control modal-button" data-toggle="modal" data-target="#{{ playingFilm.id }}">
             More
           </button>
           <!-- Modal -->
@@ -48,7 +48,7 @@
               </div>
             </div>
           </div>
-        <!-- /Modal -->
+          <!-- /Modal -->
         </div>
       </div>
     </div>
