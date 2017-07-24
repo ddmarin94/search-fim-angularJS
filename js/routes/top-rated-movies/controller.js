@@ -4,6 +4,5 @@ angular.module('filmApp')
   DataService.getRatedMovies()
   .then (function (oResponse) {
     $scope.ratedFilms = oResponse.data.results
-    console.log(oResponse)
   })
 })

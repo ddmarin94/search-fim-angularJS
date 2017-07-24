@@ -6,6 +6,5 @@ angular.module('filmApp')
   DataService.getPopularMovies()
   .then (function (oResponse) {
     $scope.films = oResponse.data.results
-    console.log(oResponse)
   })
 })

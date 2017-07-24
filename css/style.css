@@ -4,6 +4,12 @@
 
 nav.navigation{
 background-color: #000;
+border-color: #000;
+border-radius: 0px;
+}
+
+nav.navigation ul li a{
+  cursor: pointer;
 }
 
 .navigation .container ul li a{

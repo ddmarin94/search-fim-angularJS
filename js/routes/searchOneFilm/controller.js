@@ -4,13 +4,11 @@ angular.module('filmApp')
   $scope.getNamefilm = function(){
     var filmName = $scope.filmName;
     $rootScope.$broadcast('theFilmNameIsReady', { filmName: filmName });
-    console.log(filmName)
   }
   $scope.$on('theFilmNameIsReady', function(e, data) {
     DataService.getOneFilm(data.filmName)
     .then (function (oResponse) {
       $scope.getFilms = oResponse.data.results
-      console.log(oResponse)
     })
   })
 })
