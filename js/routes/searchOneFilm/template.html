@@ -1,7 +1,7 @@
 <h1 class="main-title">{{ titlePage }}</h1>
 <div class="container searchBar">
   <div class="row">
-    <div class="input-group col-md-8 col-md-offset-2">
+    <div class="input-group col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
       <input ng-model="filmName" type="text" class="form-control" placeholder="Search a film...">
       <span class="input-group-btn">
         <button ng-click="getNamefilm()"  class="btn btn-primary" type="button">Search</button>
@@ -14,7 +14,7 @@
 <!-- /.container -->
 <div class="row" >
   <div ng-repeat="getFilm in getFilms">
-    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-10 ">
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
       <div class="thumbnail film-content">
         <img ng-src="https://image.tmdb.org/t/p/w500{{ getFilm.poster_path }}" alt="film-image"></img>
         <div class="caption">
