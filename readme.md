@@ -1,6 +1,6 @@
 # How does it work?
 
-![Alt Text](https://dr5mo5s7lqrtc.cloudfront.net/items/272e0i151b2W102m1j1Z/Screen%20Recording%202017-07-23%20at%2009.40%20p.%20m..gif?X-CloudApp-Visitor-Id=2800320&v=d7183231)
+![Alt Text](https://github.com/ddmarin94/search-fim-angularJS/blob/master/img-example/Screen%20Recording%202017-07-23%20at%2009.40%20p.%20m..gif?raw=true)
 
 
 # This is a Responsive project:
