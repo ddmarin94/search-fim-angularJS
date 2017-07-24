@@ -11,9 +11,9 @@
 <!-- /.container -->
 <div class="row" >
 <div ng-repeat="ratedFilm in ratedFilms | filter: searchTitle">
-  <div class="col-lg-offset-0 col-lg-3 col-md-offset-0 col-md-4 col-sm-offset-0 col-sm-6 col-xs-8 col-xs-offset-2 ">
+  <div class="col-lg-offset-0 col-lg-3 col-md-offset-0 col-md-4 col-sm-offset-0 col-sm-4 col-xs-8 col-xs-offset-2 ">
     <div class="thumbnail film-content">
-      <img ng-src="https://image.tmdb.org/t/p/w500{{ ratedFilm.poster_path }}" alt="film-image"></img>
+      <img class="imgSize img-responsive" ng-src="https://image.tmdb.org/t/p/w500{{ ratedFilm.poster_path }}" alt="film-image"></img>
       <div class="caption">
         <!-- Title of the movie -->
         <h3>{{ ratedFilm.title }}</h3>

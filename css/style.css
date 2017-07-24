@@ -1,5 +1,40 @@
-.imgSize{
-  max-height: 525px;
+@media (min-width: 375px) and (max-width: 736px){
+  div.film-content{
+    height: 470px;
+  }
+
+  img.imgSize{
+    width: 235px;
+    height: 350px;
+  }
+}
+
+@media (min-width: 750px) and (max-width: 1024px){
+  div.film-content{
+    height: 443px;
+  }
+
+  img.imgSize{
+    width: 210px;
+    height: 315px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1336px){
+  div.film-content{
+    height: 443px;
+  }
+}
+
+@media (min-width: 1336px){
+  div.film-content{
+    height: 440px;
+  }
+
+  img.imgSize{
+    width: 210px;
+    height: 315px;
+  }
 }
 
 nav.navigation{
@@ -45,6 +80,7 @@ img{
   max-height: 360px;
   min-width: 200px;
   max-width: 310px;
+  margin: 0px;
 }
 
 h3{
@@ -75,7 +111,6 @@ h3{
   height: 30px;
   font-size: 16px;
   line-height: 0px;
-  margin-top: 20px;
 }
 
 .custom-input.form-control.ng-pristine.ng-untouched.ng-valid.ng-empty{
